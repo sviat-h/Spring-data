@@ -1,0 +1,13 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    platform: org.hibernate.dialect.PostgreSQL9Dialect
+    url: jdbc:postgresql://localhost:5432/profiles_hw_19
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+    show-sql: true
