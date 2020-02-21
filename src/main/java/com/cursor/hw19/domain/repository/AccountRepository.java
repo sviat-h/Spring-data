@@ -10,6 +10,7 @@ import java.util.List;
 public interface AccountRepository extends JpaRepository<Account, Integer> {
 
     List<Account> findByFirstName(String firstName);
-    void addAccount(Account account);
+
+
 
 }
