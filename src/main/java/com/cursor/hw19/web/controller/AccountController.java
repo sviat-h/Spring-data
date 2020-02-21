@@ -18,7 +18,9 @@ public class AccountController {
 
     @GetMapping("/")
     public void runApp() {
-        accountService.findByFirstName("Sviatoslav");
+        System.err.println("TEST    TEST    TEST");
+
+        accountService.findByFirstName("Mac");
     }
 
 

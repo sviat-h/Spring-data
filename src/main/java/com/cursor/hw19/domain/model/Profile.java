@@ -20,8 +20,11 @@ public class Profile implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(name = "username")
+    private String username;
+
     @Column(name = "job_title")
-    private String job_title;
+    private String jobTitle;
 
     @Column(name = "department")
     private String department;
