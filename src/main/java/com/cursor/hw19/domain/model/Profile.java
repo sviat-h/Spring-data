@@ -36,7 +36,7 @@ public class Profile implements Serializable {
 
     @Override
     public String toString() {
-        return "Profile: " +
+        return "\nProfile: " +
                 "id = " + id +
                 ", username = '" + username + '\'' +
                 ", jobTitle = '" + jobTitle + '\'' +

@@ -23,8 +23,10 @@ public class AccountController {
 //    @GetMapping("/")
     @Autowired
     public void runApp() {
-        System.err.println("TEST    TEST    TEST");
+        System.out.println("\n");
 
         accountService.findByFirstName("Mac");
+
+        System.out.println("\n");
     }
 }
