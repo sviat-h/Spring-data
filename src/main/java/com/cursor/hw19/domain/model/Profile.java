@@ -10,7 +10,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-@ToString
 
 @Entity
 @Table(name = "profiles")
@@ -34,4 +33,15 @@ public class Profile implements Serializable {
 
     @Column(name = "skill")
     private String skill;
+
+    @Override
+    public String toString() {
+        return "Profile: " +
+                "id = " + id +
+                ", username = '" + username + '\'' +
+                ", jobTitle = '" + jobTitle + '\'' +
+                ", department = '" + department + '\'' +
+                ", company = '" + company + '\'' +
+                ", skill = '" + skill + '\'';
+    }
 }

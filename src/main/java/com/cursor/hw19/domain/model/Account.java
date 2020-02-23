@@ -10,7 +10,6 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-@ToString
 
 @Entity
 @Table(name = "accounts")
@@ -40,4 +39,17 @@ public class Account implements Serializable {
 
     @OneToOne(cascade = CascadeType.ALL, optional = false)
     private Profile profile;
+
+    @Override
+    public String toString() {
+        return "\nAccount: " +
+                "id = " + id +
+                ", firstName = '" + firstName + '\'' +
+                ", lastName = '" + lastName + '\'' +
+                ", city = '" + city + '\'' +
+                ", gender = '" + gender + '\'' +
+                ", username = '" + username + '\'' +
+                ", profileId = " + profileId +
+                ", profile = " + profile;
+    }
 }
