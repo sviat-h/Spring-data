@@ -28,6 +28,8 @@ public class ProfileController {
 
         profileService.findByCompany("Skaboo");
 
+        profileService.findAll();
+
         System.out.println("\n");
     }
 }

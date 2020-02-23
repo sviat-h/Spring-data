@@ -19,4 +19,10 @@ public class AccountServiceImpl implements AccountService {
         List<Account> byFirstName = accountRepository.findByFirstName(firstName);
         System.out.println(byFirstName);
     }
+
+    @Override
+    public void findAll() {
+        List<Account> accountList = accountRepository.findAll();
+        System.out.println(accountList);
+    }
 }

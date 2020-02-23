@@ -6,4 +6,5 @@ import org.springframework.stereotype.Service;
 public interface AccountService {
      void findByFirstName(String firstName);
 
+     void findAll();
 }

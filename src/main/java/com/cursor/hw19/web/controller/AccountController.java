@@ -27,6 +27,8 @@ public class AccountController {
 
         accountService.findByFirstName("Mac");
 
+        accountService.findAll();
+
         System.out.println("\n");
     }
 }

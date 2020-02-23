@@ -11,6 +11,6 @@ public interface AccountRepository extends JpaRepository<Account, Integer> {
 
     List<Account> findByFirstName(String firstName);
 
-
+    List<Account> findAll();
 
 }

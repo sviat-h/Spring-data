@@ -11,4 +11,5 @@ public interface ProfileRepository extends JpaRepository<Profile, Integer> {
 
     List<Profile> findByCompany(String company);
 
+    List<Profile> findAll();
 }

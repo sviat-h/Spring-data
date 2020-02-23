@@ -20,4 +20,11 @@ public class ProfileServiceImpl implements ProfileService {
         List<Profile> profileList = profileRepository.findByCompany(company);
         System.out.println(profileList);
     }
+
+    @Override
+    public void findAll() {
+        List<Profile> profileList = profileRepository.findAll();
+
+        System.out.println(profileList);
+    }
 }
