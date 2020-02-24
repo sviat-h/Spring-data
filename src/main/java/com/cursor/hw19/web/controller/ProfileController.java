@@ -1,6 +1,5 @@
 package com.cursor.hw19.web.controller;
 
-import com.cursor.hw19.service.impl.AccountServiceImpl;
 import com.cursor.hw19.service.impl.ProfileServiceImpl;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -14,16 +13,16 @@ import org.springframework.web.bind.annotation.RestController;
 @Component
 @RestController
 @CrossOrigin
-//@RequestMapping("/api/profiles")
+@RequestMapping("/api/profiles")
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProfileController {
     @Autowired
     private ProfileServiceImpl profileService;
 
-    //    @GetMapping("/")
+    @GetMapping("/")
     @Autowired
-    public void runApp() {
+    public void getData() {
         System.out.println("\n");
 
         profileService.findDepartmentsByCompany("Kare");

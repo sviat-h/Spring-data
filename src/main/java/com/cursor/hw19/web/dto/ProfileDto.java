@@ -1,11 +1,12 @@
 package com.cursor.hw19.web.dto;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 public class ProfileDto {
 
-    private Integer id;
     private String username;
     private String jobTitle;
     private String department;

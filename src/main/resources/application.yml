@@ -11,3 +11,12 @@ spring:
     password: postgres
     driverClassName: org.postgresql.Driver
     show-sql: true
+  flyway:
+    enabled: true
+    validate-on-migrate: true
+    url: jdbc:postgresql://localhost:5432/profiles_hw_19
+    password: postgres
+    check-location: false
+    locations: classpath:db/migration
+    username: postgres
+    schemas: public
