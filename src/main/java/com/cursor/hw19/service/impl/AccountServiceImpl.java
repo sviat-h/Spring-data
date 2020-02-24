@@ -25,4 +25,10 @@ public class AccountServiceImpl implements AccountService {
         List<Account> accountList = accountRepository.findAll();
         System.out.println(accountList);
     }
+
+    @Override
+    public void findFirstNameById(Integer id) {
+        String firstName = accountRepository.findFirstNameById(id);
+        System.out.println("Id = " + id + ". First name = " + firstName + ".");
+    }
 }

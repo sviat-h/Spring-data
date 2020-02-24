@@ -6,8 +6,6 @@ import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Component
@@ -20,14 +18,16 @@ public class AccountController {
     @Autowired
     private AccountServiceImpl accountService;
 
-//    @GetMapping("/")
+    //    @GetMapping("/")
     @Autowired
     public void runApp() {
         System.out.println("\n");
 
-        accountService.findByFirstName("Mac");
+        accountService.findFirstNameById(300);
 
-        accountService.findAll();
+//        accountService.findByFirstName("Mac");
+//
+//        accountService.findAll();
 
         System.out.println("\n");
     }

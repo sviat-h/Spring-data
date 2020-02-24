@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Component
 @RestController
 @CrossOrigin
-//@RequestMapping("/api/accounts")
+//@RequestMapping("/api/profiles")
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProfileController {
@@ -26,9 +26,11 @@ public class ProfileController {
     public void runApp() {
         System.out.println("\n");
 
-        profileService.findByCompany("Skaboo");
+        profileService.findDepartmentsByCompany("Kare");
 
-        profileService.findAll();
+//        profileService.findByCompany("Skaboo");
+//
+//        profileService.findAll();
 
         System.out.println("\n");
     }

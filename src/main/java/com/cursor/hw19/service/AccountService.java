@@ -7,4 +7,6 @@ public interface AccountService {
      void findByFirstName(String firstName);
 
      void findAll();
+
+     void findFirstNameById(Integer id);
 }
