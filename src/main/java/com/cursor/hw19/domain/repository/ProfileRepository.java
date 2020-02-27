@@ -16,5 +16,5 @@ public interface ProfileRepository extends JpaRepository<Profile, Integer> {
     List<Profile> findAll();
 
     @Query(value = "select department from profiles where company=:company", nativeQuery = true)
-    List<String>findDepartmentsByCompany(@Param("company") String company);
+    List<String> findDepartmentsByCompany(@Param("company") String company);
 }

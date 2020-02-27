@@ -1,6 +1,5 @@
 package com.cursor.hw19.service;
 
-import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Service;
 
 @Service
