@@ -1,4 +1,4 @@
-insert into profiles (id, username, job_title, department, company, skill) values (1, 'smacgeffen0', 'Editor', 'Support', 'Buzzdog', 'AV Integration');
+insert into public.profiles (id, username, job_title, department, company, skill) values (1, 'smacgeffen0', 'Editor', 'Support', 'Buzzdog', 'AV Integration');
 insert into profiles (id, username, job_title, department, company, skill) values (2, 'tdewicke1', 'Social Worker', 'Legal', 'Photobug', 'Email Marketing');
 insert into profiles (id, username, job_title, department, company, skill) values (3, 'bgallafant2', 'Web Designer IV', 'Sales', 'Yodo', 'Variable Data Printing');
 insert into profiles (id, username, job_title, department, company, skill) values (4, 'dvaillant3', 'Executive Secretary', 'Engineering', 'Avamm', 'TS');

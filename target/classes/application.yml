@@ -20,3 +20,4 @@ spring:
     locations: classpath:db/migration
     username: postgres
     schemas: public
+    baseline-on-migrate: true

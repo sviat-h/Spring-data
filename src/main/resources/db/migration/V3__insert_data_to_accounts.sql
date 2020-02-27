@@ -1,4 +1,4 @@
-insert into accounts (id, profile_id, first_name, last_name, city, gender, username) values (1,   1, 'Ma,c', 'Ingon', 'Maksatikha', 'Male', 'mingon0');
+insert into public.accounts (id, profile_id, first_name, last_name, city, gender, username) values (1,   1, 'Ma,c', 'Ingon', 'Maksatikha', 'Male', 'mingon0');
 insert into accounts (id, profile_id, first_name, last_name, city, gender, username) values (2,   2, 'Benedict', 'Dixsee', 'Kryva Hora', 'Male', 'bdixsee1');
 insert into accounts (id, profile_id, first_name, last_name, city, gender, username) values (3,   3, 'Saxe', 'Coster', 'Karak', 'Male', 'scoster2');
 insert into accounts (id, profile_id, first_name, last_name, city, gender, username) values (4,   4, 'Ethelred', 'Boom', 'Sadar', 'Male', 'eboom3');
