@@ -27,10 +27,6 @@ public class ProfileController {
 
         profileService.findDepartmentsByCompany("Kare");
 
-//        profileService.findByCompany("Skaboo");
-//
-//        profileService.findAll();
-
         System.out.println("\n");
     }
 }
